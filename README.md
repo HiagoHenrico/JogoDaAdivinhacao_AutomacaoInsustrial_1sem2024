@@ -1,0 +1,1 @@
+# JogoDaAdivinhacao_AutomacaoInsustrial_1sem2024
