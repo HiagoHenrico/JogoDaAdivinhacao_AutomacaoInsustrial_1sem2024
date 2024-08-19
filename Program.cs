@@ -20,8 +20,12 @@ namespace jogoAcertouPerdeu
                 Random num_aleatorio = new Random();
                 int num_oculto = num_aleatorio.Next(1, 100); 
 
-                Console.Write("Digite a quantidade de jogadores: ");
-                qtd_jogadores = int.Parse(Console.ReadLine());
+                do{             
+                    Console.Write("Digite a quantidade de jogadores: ");
+                    qtd_jogadores = int.Parse(Console.ReadLine());
+                }while(qtd_jogadores < 2 || qtd_jogadores > 5);
+
+                String[] nm_j = new String[qtd_jogadores];
 
                 while (!acertou)
                 {
