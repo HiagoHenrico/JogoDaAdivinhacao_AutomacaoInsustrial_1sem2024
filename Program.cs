@@ -27,10 +27,12 @@ namespace jogoAcertouPerdeu
 
                 String[] nm_j = new String[qtd_jogadores]; 
 
+                int i=0;
                 do{
                     Console.WriteLine("Digite os nomes dos jogadores: ");
-                    nm_j = Console.ReadLine();
-                }while(nm_j.lenght == qtd_jogadores);
+                    nm_j[i] = Console.ReadLine();
+                    i++
+                }while(i <= nm_j);
 
                 while (!acertou)
                 {
